@@ -9,18 +9,22 @@ namespace DaysOfWeek
             string[] DaysOfWeeks = {
                                     "Monday",
                                     "Tuesday",
-                                    "Wednesday",
+                                    "Wenesday",
                                     "Thursday",
                                     "Friday",
                                     "Satursday",
                                     "Sunday"
                                   };
 
-            Console.WriteLine("Which day you want to display?... Enter number (e.g - Monday = 1) > ");
-            int iDay = int.Parse(Console.ReadLine());
+            Console.WriteLine("Before : ");
+            foreach (string day in DaysOfWeeks)
+                Console.WriteLine(day);
 
-            string chosenDay = DaysOfWeeks[iDay-1];
-            Console.WriteLine($"That day is > {chosenDay}");
+            DaysOfWeeks[2] = "wednesday";
+
+            Console.WriteLine("\nAfter : ");
+            foreach (string day in DaysOfWeeks)
+                Console.WriteLine(day);
         }
 
     }
