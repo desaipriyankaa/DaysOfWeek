@@ -19,7 +19,7 @@ namespace DaysOfWeek
             Console.WriteLine("Which day you want to display?... Enter number (e.g - Monday = 1) > ");
             int iDay = int.Parse(Console.ReadLine());
 
-            string chosenDay = DaysOfWeeks[iDay];
+            string chosenDay = DaysOfWeeks[iDay-1];
             Console.WriteLine($"That day is > {chosenDay}");
         }
 
