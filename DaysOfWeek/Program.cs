@@ -16,10 +16,11 @@ namespace DaysOfWeek
                                     "Sunday"
                                   };
 
-            foreach (string day in DaysOfWeeks)
-            {
-                Console.WriteLine(day);
-            }
+            Console.WriteLine("Which day you want to display?... Enter number (e.g - Monday = 1) > ");
+            int iDay = int.Parse(Console.ReadLine());
+
+            string chosenDay = DaysOfWeeks[iDay];
+            Console.WriteLine($"That day is > {chosenDay}");
         }
 
     }
